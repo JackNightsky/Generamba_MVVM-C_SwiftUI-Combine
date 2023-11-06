@@ -15,14 +15,14 @@ code_files:
 
 # ViewModel layer
 ## Protocol
-- {name: ViewModels/ViewModel.swift, path: mvvm-c/Code/ViewModel/ViewModelProtocol.swift.liquid}
+- {name: ViewModels/ViewModel.swift, path: mvvm-c/Code/ViewModel/ViewModel.swift.liquid}
 ## Implementation
-- {name: ViewModels/ModuleViewModel.swift, path: mvvm-c/Code/ViewModel/ViewModel.swift.liquid}
+- {name: ViewModels/ModuleViewModel.swift, path: mvvm-c/Code/ViewModel/ModuleViewModel.swift.liquid}
 ## Mock
 - {name: ViewModels/MockViewModel.swift, path: mvvm-c/Code/ViewModel/MockViewModel.swift.liquid}
 
 # Coordinator layer
 ## Protocol
-- {name: Coordinator.swift, path: mvvm-c/Code/CoordinatorProtocol.swift.liquid}
+- {name: Coordinator.swift, path: mvvm-c/Code/Coordinator.swift.liquid}
 ## Implementation
-- {name: ModuleCoordinator.swift, path: mvvm-c/Code/Coordinator.swift.liquid}
+- {name: ModuleCoordinator.swift, path: mvvm-c/Code/ModuleCoordinator.swift.liquid}
