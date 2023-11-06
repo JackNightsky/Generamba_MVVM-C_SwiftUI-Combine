@@ -1,0 +1,12 @@
+import Foundation
+import SwiftUI
+import Stinsen
+
+final class {{ module_info.name }}ModuleCoordinator: {{ module_info.name }}Coordinator, NavigationCoordinatable {
+    var stack: NavigationStack<DefaultLoginCoordinator> = NavigationStack(initial: \.start)
+    @Root var start = makeStart
+    
+    func makeStart() -> some View {
+        return {{ module_info.name }}View(viewModel: {{ module_info.name }}ModuleViewModel())
+    }
+}
