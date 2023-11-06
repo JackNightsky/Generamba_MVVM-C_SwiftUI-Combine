@@ -7,6 +7,7 @@ final class {{ module_info.name }}ModuleCoordinator: {{ module_info.name }}Coord
     @Root var start = makeStart
     
     func makeStart() -> some View {
-        return {{ module_info.name }}View(viewModel: {{ module_info.name }}ModuleViewModel())
+        let viewModel = {{ module_info.name }}ModuleViewModel()
+        return {{ module_info.name }}View(viewModel: viewModel)
     }
 }
