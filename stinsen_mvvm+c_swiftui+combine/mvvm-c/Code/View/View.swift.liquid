@@ -18,6 +18,6 @@ struct {{ module_info.name }}View<ViewModel: {{ module_info.name }}ViewModel>: V
 
 struct {{ module_info.name }}View_Previews: PreviewProvider {
     static var previews: some View {
-        {{ module_info.name }}iew(viewModel: Mock{{ module_info.name }}ViewModel())
+        {{ module_info.name }}View(viewModel: Mock{{ module_info.name }}ViewModel())
     }
 }
