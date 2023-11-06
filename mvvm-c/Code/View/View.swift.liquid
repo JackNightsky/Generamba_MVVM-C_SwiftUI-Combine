@@ -1,0 +1,23 @@
+import SwiftUI
+import Combine
+
+struct {{ module_info.name }}View<ViewModel: {{ module_info.name }}ViewModel>: View {
+    @ObservedObject var viewModel: ViewModel
+    private var cancellables = Set<AnyCancellable>()
+    
+    var body: some View {
+        VStack {
+            <#your content#>
+        }
+    }
+    
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
+}
+
+struct {{ module_info.name }}View_Previews: PreviewProvider {
+    static var previews: some View {
+        {{ module_info.name }}iew(viewModel: Mock{{ module_info.name }}ViewModel())
+    }
+}

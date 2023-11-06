@@ -1,0 +1,28 @@
+# Template information section
+name: "mvvmc"
+summary: "MVVM+C module template."
+author: "JackNightsky"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# View layer
+## Implementation
+- {name: Views/View.swift, path: mvvm-c/Code/View/View.swift.liquid}
+
+# ViewModel layer
+## Protocol
+- {name: ViewModels/ViewModel.swift, path: mvvm-c/Code/ViewModel/ViewModelProtocol.swift.liquid}
+## Implementation
+- {name: ViewModels/ModuleViewModel.swift, path: mvvm-c/Code/ViewModel/ViewModel.swift.liquid}
+## Mock
+- {name: ViewModels/MockViewModel.swift, path: mvvm-c/Code/ViewModel/MockViewModel.swift.liquid}
+
+# Coordinator layer
+## Protocol
+- {name: Coordinator.swift, path: mvvm-c/Code/CoordinatorProtocol.swift.liquid}
+## Implementation
+- {name: ModuleCoordinator.swift, path: mvvm-c/Code/Coordinator.swift.liquid}
