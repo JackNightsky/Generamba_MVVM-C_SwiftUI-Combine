@@ -3,9 +3,11 @@ import SwiftUI
 import Stinsen
 
 final class {{ module_info.name }}ModuleCoordinator: {{ module_info.name }}Coordinator, NavigationCoordinatable {
-    var stack: NavigationStack<DefaultLoginCoordinator> = NavigationStack(initial: \.start)
+    typealias NavigationStack = Stinsen.NavigationStack
+
+    var stack: NavigationStack<{{ module_info.name }}ModuleCoordinator> = NavigationStack(initial: \.start)
     @Root var start = makeStart
-    
+
     func makeStart() -> some View {
         let viewModel = {{ module_info.name }}ModuleViewModel()
         return {{ module_info.name }}View(viewModel: viewModel)

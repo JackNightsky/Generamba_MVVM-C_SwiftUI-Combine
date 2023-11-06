@@ -4,13 +4,13 @@ import Combine
 struct {{ module_info.name }}View<ViewModel: {{ module_info.name }}ViewModel>: View {
     @ObservedObject var viewModel: ViewModel
     private var cancellables = Set<AnyCancellable>()
-    
+
     var body: some View {
         VStack {
-            <#your content#>
+            Text("New module")
         }
     }
-    
+
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
     }
@@ -18,6 +18,6 @@ struct {{ module_info.name }}View<ViewModel: {{ module_info.name }}ViewModel>: V
 
 struct {{ module_info.name }}View_Previews: PreviewProvider {
     static var previews: some View {
-        {{ module_info.name }}View(viewModel: Mock{{ module_info.name }}ViewModel())
+        {{ module_info.name }}View(viewModel: {{ module_info.name }}MockViewModel())
     }
 }
