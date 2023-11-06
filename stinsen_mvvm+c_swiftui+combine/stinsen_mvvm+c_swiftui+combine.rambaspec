@@ -1,6 +1,6 @@
 # Template information section
 name: "mvvmc"
-summary: "MVVM+C module template."
+summary: "stinsen_mvvm+c_swiftui+combine module template."
 author: "JackNightsky"
 version: "0.1.0"
 license: "MIT"
