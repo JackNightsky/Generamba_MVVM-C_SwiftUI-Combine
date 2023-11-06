@@ -23,6 +23,6 @@ code_files:
 
 # Coordinator layer
 ## Protocol
-- {name: Coordinator.swift, path: mvvm-c/Code/Coordinator.swift.liquid}
+- {name: Coordinator.swift, path: mvvm-c/Code/Coordinator/Coordinator.swift.liquid}
 ## Implementation
-- {name: ModuleCoordinator.swift, path: mvvm-c/Code/ModuleCoordinator.swift.liquid}
+- {name: ModuleCoordinator.swift, path: mvvm-c/Code/Coordinator/ModuleCoordinator.swift.liquid}
